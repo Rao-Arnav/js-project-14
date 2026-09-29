@@ -1,0 +1,357 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #090d1a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    background: rgba(5, 8, 20, 0.95);
+    padding: 15px 0;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffd93d !important;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #ffd93d !important;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(rgba(4, 7, 20, 0.45), rgba(4, 7, 20, 0.9)),
+        url("https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.small-title {
+    color: #ffd93d;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 90px;
+    font-weight: 900;
+    margin: 10px 0;
+    color: #ffd93d;
+    text-shadow: 0 0 30px rgba(255, 217, 61, 0.5);
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #e1e5f0;
+}
+
+.explore-btn {
+    margin-top: 25px;
+    background: #ffcc00;
+    color: #111;
+    padding: 14px 35px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.explore-btn:hover {
+    background: #ffdf45;
+    color: #111;
+    transform: scale(1.05);
+}
+
+
+/* INTRO */
+
+.intro-section {
+    padding: 80px 20px;
+    background: #10172b;
+}
+
+.section-title {
+    color: #ffd93d;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.intro-section p,
+.about-section > .container > p {
+    max-width: 850px;
+    margin: auto;
+    color: #cbd1df;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+
+/* POKEMON SECTIONS */
+
+.pokemon-section {
+    padding: 90px 0;
+    background: #090d1a;
+}
+
+.mythical-section {
+    padding: 90px 0;
+    background: #11162a;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.section-heading > span {
+    font-size: 55px;
+}
+
+.section-heading h2 {
+    color: #ffd93d;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-heading p {
+    color: #aeb7ca;
+    margin-top: 8px;
+}
+
+
+/* CARDS */
+
+.pokemon-card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    background: #171e34;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #2b3655;
+
+    transition: 0.3s;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffd93d;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+}
+
+.pokemon-card img {
+    width: 45%;
+    max-height: 280px;
+    object-fit: contain;
+    padding: 15px;
+
+    transition: 0.3s;
+}
+
+.pokemon-card:hover img {
+    transform: scale(1.08);
+}
+
+.pokemon-info {
+    padding: 25px 20px 25px 5px;
+    flex: 1;
+}
+
+.pokemon-info h3 {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.pokemon-info p {
+    color: #c2c9d8;
+    line-height: 1.6;
+}
+
+.type {
+    color: #ffd93d !important;
+    font-weight: bold;
+}
+
+.tag {
+    display: inline-block;
+    background: #263653;
+    color: #7fd8ff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.mythical-tag {
+    background: #432a63;
+    color: #e4a8ff;
+}
+
+.power {
+    margin-top: 15px;
+    padding: 12px;
+    background: #0d1324;
+    border-radius: 10px;
+    color: #e2e7f1;
+    font-size: 14px;
+}
+
+.power b {
+    color: #ffd93d;
+}
+
+
+/* ABOUT */
+
+.about-section {
+    padding: 90px 20px;
+    background: #090d1a;
+}
+
+.about-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.about-boxes div {
+    background: #171e34;
+    border: 1px solid #2b3655;
+    border-radius: 15px;
+    padding: 30px;
+    width: 30%;
+}
+
+.about-boxes span {
+    font-size: 40px;
+}
+
+.about-boxes h4 {
+    color: #ffd93d;
+    margin-top: 15px;
+}
+
+.about-boxes p {
+    color: #b9c1d2;
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #050812;
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 1px solid #202b45;
+}
+
+footer h3 {
+    color: #ffd93d;
+    font-size: 30px;
+}
+
+footer p {
+    color: #9fa9bd;
+}
+
+.creator {
+    color: #ffd93d !important;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 25px;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .pokemon-card {
+        display: block;
+    }
+
+    .pokemon-card img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .pokemon-info {
+        padding: 20px;
+    }
+
+    .about-boxes {
+        display: block;
+    }
+
+    .about-boxes div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
